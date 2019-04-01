@@ -28,6 +28,8 @@ RUN cd /jmeter/ \
 
 ENV PATH $JMETER_HOME/bin:$PATH
 
+RUN touch jmeter-server.log
+
 # Ports required for JMeter Slaves/Server
 EXPOSE 50000
 EXPOSE $RMI_PORT
